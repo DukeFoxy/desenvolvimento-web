@@ -1,0 +1,24 @@
+h1{
+    color:#3FEF98;
+    background: #3F7058;
+    border: 2px solid #31BD77;
+}
+
+h1{
+    color: chocolate;
+}
+h2{
+    color: red;
+}
+#subTitle2{
+    color: blue;
+}
+.paragraph{
+    color: teal;
+}
+p{
+    color: gray;
+}
+section h2{
+    font-size: 50px;
+}

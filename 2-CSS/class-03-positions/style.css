@@ -1,0 +1,57 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.square{
+    width: 120px;
+    height: 120px;
+    background: red;
+    padding: 8px;
+    color: white;
+}
+
+#squareX{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+#squareY{
+    background: green;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 2; 
+}
+
+#squareZ{
+    background: blue;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    z-index: 3;
+}
+.container{
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+
+    position: fixed;
+    right:0px;
+    top: 0px;
+    z-index: -1;
+    opacity: 0.2;
+}
+p,h2{
+    margin-top: 24px;
+}
+
+h2{
+    position: sticky;
+    top: 0px;
+    background: lightgray;   
+}

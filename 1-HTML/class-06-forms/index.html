@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 06 Forms</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Login</legend>
+
+            <section>
+                <label for=userEmail>Email</label>
+                <input 
+                type="email" 
+                name="userEmail" 
+                id="userEmail" 
+                placeholder="Digite seu melhor email" 
+                required>    
+                <br> <br>   
+                <label for="userPassword">Senha</label>
+                <input 
+                type="password" 
+                name="userPassword" 
+                id="userPassword" 
+                placeholder="Digite sua senha" 
+                required> <br> <br>
+                
+                <button type="submit">Logar</button>
+                <button type="reset">Reset</button>
+            </section>
+            
+        </fieldset>
+
+       <br> <fieldset>
+            <legend>Datas   </legend>
+            <label for="userAge">Idade</label>
+            <input 
+            type="number" 
+            name="userAge"  
+            placeholder="Digite sua idade"
+            inputmode="numeric" min="16"
+            minlength="2" max="75">
+            <br><br>       
+            <input type="date" value="2001-07-24" name="born"><br><br>
+            <input type="range"
+            min="0"
+            max="100"
+            name="volume"
+            value="70"
+            step="1">  <br><br>
+        </fieldset>
+            
+            <input type="file"
+                accept="image/*">
+            <input type="color" name="Favorite COlor">
+            
+            <br><br>
+            <input type="checkbox" id="audio" name="audio">
+            <label for="audio">Audio</label> <br>
+            <input type="checkbox" id="video" name="video">
+            <label for="video">Video</label> <br>
+            
+            <input type="checkbox" id="image" name="image">
+            <label for="image">Image</label><br>
+            <section>
+
+                <br><br>
+                <section>
+                    <input type="radio" id="yes" name="term"
+                    value="on">
+                    <label for="yes">Sim</label>
+        
+                </section>
+                <section>
+
+                    <section>
+                        <input type="radio" id="no" name="term"
+                        value="off">
+                        <label for="no">Não</label>
+                    </section>
+            </section> <br>
+            <select name="students" id="students">
+                <option value="Emanuel">Emanuel</option>
+                <option value="Adriana">Adriana</option>
+                <option value="Pedro">Pedro</option>
+            </select>
+            <br><br>
+            <textarea 
+            name="observações" 
+            id="" 
+            cols="70"
+            placeholder="Digite suas observações" 
+            rows="10"
+            maxlength="200"></textarea>
+            
+            
+            <button type="submit" id="userAge">Enviar</button>
+            
+    </form>
+</body>
+</html>

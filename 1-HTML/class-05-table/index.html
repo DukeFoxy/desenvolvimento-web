@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 05 Table</title>
+    <style>
+        th,td{
+            border: solid 1px rgb(0, 0, 0);
+        }
+        table{
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 80px;
+            /* border-style:ridge; */
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        th{
+            background: lightgray;
+            font-size: 70px;
+        }
+        img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <b>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Entrada</th>
+                    <th scope="col">Saida</th>
+                    <th scope="col">Preço</th>
+                </b>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/3067/3067788.png" alt=""></td>
+                <td>50</td>
+                <td>40</td>
+                <td>R$15,00</td>
+            </tr>
+            <tr>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/3416/3416961.png" alt=""></td>
+                <td>40</td>
+                <td>20</td>
+                <td>R$20,00</td>
+            </tr>
+            <tr>
+                <td><img src="https://cdn-icons-png.flaticon.com/512/2396/2396713.png" alt=""></td>
+                <td>80</td>
+                <td>75</td>
+                <td>R$10,00</td>
+            </tr>
+        </tbody>
+        <tbody>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <th scope="row">170 </th>
+                <th scope="row">135</th>
+                <th>R$45,00</th>
+                <th>R$1750,00</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
