@@ -1,0 +1,67 @@
+// OPP - paradigm
+// entities (real world)
+// properties (attibutes / variables)
+// methods (function)
+
+class Control {
+    constructor(temp){
+        this.temperature = temp;
+        this.color = "white";
+        this.isOn = false;
+    }
+    on_Off() {
+        this.isOn = !this.isOn; //-(2) = -2
+    }
+    
+    off(){
+        this.isOn = false;
+    }
+
+    tempUpper() {
+        this.temperature = this.temperature + 1;
+    }
+
+    tempLower() {
+        this.temperature = this.temperature - 1;
+    }
+
+    if () {
+        
+    }
+}
+
+const airControl = new Control(18);
+const airControl2 = new Control(22);
+
+console.log(airControl.temperature);
+console.log(airControl2.temperature);
+console.log(airControl2.color);
+
+console.log(airControl.isOn);
+
+console.log(airControl.isOn);
+
+console.log(airControl.isOn);
+
+airControl.tempUpper();
+
+console.log(airControl.temperature);
+
+const buttonUpeer = document.querySelector(".buttonUpper")
+const buttonLower = document.querySelector(".buttonLower")
+const buttonOnOff = document.querySelector(".buttonOnOff")
+
+buttonUpeer.addEventListener("click", () => {
+    airControl.tempUpper()
+    console.log(airControl.temperature)
+})
+buttonLower.addEventListener("click", () => {
+    airControl.tempLower()
+    console.log(airControl.temperature)
+})
+
+buttonOnOff.addEventListener("click", () => {
+    airControl.on_Off()
+    console.log(airControl.isOn);
+})
+
