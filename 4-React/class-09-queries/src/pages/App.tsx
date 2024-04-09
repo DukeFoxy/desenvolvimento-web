@@ -10,9 +10,16 @@ export function App() {
   return(
     <>
       <h1>App</h1>
-      <pre>
-        {data}
-      </pre>
+      {isLoading &&  <div>Loading...</div>}
+      {!isLoading && error && <div>Error...</div>}
+      {data?.map((user: User)=> {
+        return (
+        <div key ={user.id}>
+          <strong>{user.name}</strong>
+          <p>{user.phone}</p>
+        </div>
+        )
+      })}
     </>
   )
 }

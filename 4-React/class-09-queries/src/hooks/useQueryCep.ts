@@ -2,7 +2,8 @@ import { useQuery } from "@tanstack/react-query";
 
 async function getCep(cep: string) {
     // const data = await fetch (`https://cdn.apicep.com/file/apicep/${cep}06233-030.json`);
-    const data = await fetch (`https://api.github.com/users/DukeFoxy`);
+    // const data = await fetch (`https://api.github.com/users/DukeFoxy`);
+    const data = await fetch (`https://jsonplaceholder.typicode.com/users`);
     return data.json();
     
 }
